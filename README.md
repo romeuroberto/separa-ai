@@ -17,7 +17,7 @@ operação de campo.
 _Atualizado em 10/11/2026._
 
 **Em piloto.** A plataforma roda numa VM própria, com publicação por imagem versionada. Das
-17 features planejadas, 15 estão entregues, 1 está em fechamento e 2 ainda não começaram.
+17 features planejadas, 14 estão entregues, 1 está em fechamento e 2 ainda não começaram.
 
 | # | Feature | Estado |
 |---|---|---|
@@ -72,12 +72,16 @@ roteiro de validação. Elas obedecem a artefatos que vieram antes de todas:
   o registro de campo é imutável, a idempotência vem do identificador de origem, ponto e
   dinheiro nunca compartilham estrutura e regra crítica vive no banco.
 - PRD: requisitos (RF) e regras de negócio (RN) numerados.
-- ADRs: 23 decisões de arquitetura, com o raciocínio de cada uma.
-- C4: contexto e contêineres.
+- ADRs: 23 decisões de arquitetura, com o raciocínio de cada uma. Dois estão publicados
+  aqui: [ADR-003, offline-first no app do catador](docs/adr/003-offline-first-catador.md) e
+  [ADR-004, pontuação como livro-razão](docs/adr/004-livro-razao-pontos.md).
+- C4: contexto e contêineres. [Publicado aqui](docs/c4.md).
 - ERD: o modelo de dados canônico.
 - Contratos OpenAPI: um por módulo, do M0 ao M6.
 
 ## Código
 
-O código-fonte fica num repositório privado. Este repositório é a vitrine do projeto. O
-acesso ao código e uma demonstração podem ser combinados pelo contato do meu perfil.
+O código está disponível para avaliação técnica mediante solicitação. O desenvolvimento
+acontece num repositório privado, com o histórico completo de commits, specs e testes. Este
+repositório é a vitrine: traz o README e uma amostra da documentação de arquitetura. Para
+pedir acesso ou uma demonstração, use o contato do meu perfil.
